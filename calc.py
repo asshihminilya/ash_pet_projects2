@@ -1,18 +1,17 @@
-while True:
-#умножение
-    def multiplication(num1, num2):
+def multiplication(num1, num2):
         return num1 * num2
 
-# деление
-    def division(num1, num2):
+def division(num1, num2):
         return num1 / num2
 
-# сложение
-    def plus(num1, num2):
+def plus(num1, num2):
         return num1 + num2
 
-    def minus(num1, num2):
+def minus(num1, num2):
         return num1 - num2
+
+
+while True:
 
     try:
         num1 = float(input('Введи первое  число:'))
@@ -27,8 +26,10 @@ while True:
             print(plus(num1, num2))
         elif znak == '-':
             print(minus(num1, num2))
+
         else:
             print("Неверный знак операции")
+
         print('Введи Q выхода')
     except ZeroDivisionError:
         print('Делить на ноль нельзя')
